@@ -1,4 +1,59 @@
-
 :root {
-    
+    /*Colors
+    Primary*/
+    --purple-50: hsl(260, 100%, 95%);
+    --purple-300: hsl(264, 82%, 80%);
+    --purple-500: hsl(263, 55%, 52%);
+    /*Colors
+    Neutral*/
+    --grey-100: hsl(214, 17%, 92%);
+    --grey-200: hsl(0, 0%, 81%);
+    --grey-400: hsl(224, 10%, 45%);
+    --grey-500: hsl(217, 19%, 35%);
+    --bark-blue: hsl(219, 29%, 14%);
+    --black: hsl(0, 0%, 7%);
+    --white: hsl(0, 0%, 100%);
+    /*Fonts*/
+    --font-size: clamp(13px, 0.8rem + 1.4vw, 1.3rem);
 }
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.barlow-semi-condensed-medium {
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-weight: 500;
+    font-size: var(--font-size);
+    font-style: normal;
+}
+
+.barlow-semi-condensed-semibold {
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-weight: 600;
+    font-size: var(--font-size);
+    font-style: normal;
+}
+
+body {
+    width: clamp(300px, 50% 48rem);
+    min-block-size: 100vh;
+    background-color: var(--purple-50);
+    padding-inline: 1.5rem;
+    text-align: justify;
+}
+
+.element-container {
+    width: 200px;
+    min-height: 960px;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(5, 1fr);
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    padding-block-start: 2rem;
+}
+
