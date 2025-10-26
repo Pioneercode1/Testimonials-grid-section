@@ -160,8 +160,16 @@ body {
     }
 
     .card-daniel-clifford {
+        position: relative;
         grid-column: 1 / span 2;
         grid-row: 1;
+    }
+
+    .card-daniel-clifford::before {
+        position: absolute;
+        content: url(./images/bg-pattern-quotation.svg);
+        top: 0;
+        right: 2rem;
     }
 
     .card-jonathan-walters {
