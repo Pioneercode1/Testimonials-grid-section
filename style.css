@@ -14,7 +14,8 @@
     --black: hsl(0, 0%, 7%);
     --white: hsl(0, 0%, 100%);
     /*Fonts*/
-    --font-size: clamp(13px, 0.8rem + 1.4vw, 1.3rem);
+    /* --large-font-size: clamp(13px, 0.8rem + 1.6vw, 1.2rem); */
+    --font-size: clamp(13px, 0.7rem + 1vw, 1.1rem);
 }
 
 * {
@@ -38,22 +39,99 @@
 }
 
 body {
-    width: clamp(300px, 50% 48rem);
+    width: clamp(310px, 50% 48rem);
     min-block-size: 100vh;
     background-color: var(--purple-50);
-    padding-inline: 1.5rem;
-    text-align: justify;
 }
 
 .element-container {
-    width: 200px;
-    min-height: 960px;
+    width: clamp(290px, 50%, 26rem);
+    height: 960px;
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: repeat(5, 1fr);
     justify-content: center;
     align-items: center;
     gap: 24px;
-    padding-block-start: 2rem;
+    padding-block: 2rem;
+    padding-inline: 1rem;
+    margin: 0 auto;
 }
 
+.cards-all {
+    width: clamp(251px, 50%, 24rem);
+    border-radius: 8px;
+    padding: 1.6rem;
+    color: var(--white);
+    box-shadow: 0 5px 5px rgb(0, 0, 0, 0.1);
+    text-align: justify;
+}
+
+.cards-all p:not(:last-child) {
+    padding-block: 1rem;
+    font-size: calc(var(--font-size) + 0.1rem);
+    font-weight: 600;
+    scale: 1.03;
+}
+
+.cards-all p:nth-of-type(2) {
+    font-size: clamp(12px, 0.6rem + 0.5vw, 1rem);
+}
+
+.img-container {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 16px;
+}
+
+.img-container h2 {
+    font-size: var(--font-size);
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.img-container img {
+    width: 25px;
+    height: 25px;
+    outline: 1px solid var(--white);
+    border-radius: 50%;
+}
+
+.card-daniel-clifford {
+    background-color: var(--purple-500);
+}
+
+.card-jonathan-walters {
+    background-color: var(--grey-500);
+}
+
+.card-jonathan-walters p:not(:last-child) {
+    padding-block: 1rem;
+}
+
+.card-jeanette-harmon {
+    background-color: var(--white);
+    color: var(--black);
+}
+
+.card-jeanette-harmon p:not(:last-child) {
+    padding-block: 1rem;
+}
+
+.card-patrick-abrams {
+    background-color: var(--bark-blue);
+}
+
+.card-patrick-abrams p:not(:last-child) {
+    padding-block: 1rem;
+}
+
+.card-kira-whittle {
+    background-color: var(--white);
+    color: var(--black);
+}
+
+.card-kira-whittle p:not(:last-child) {
+    padding-block: 1rem;
+}
