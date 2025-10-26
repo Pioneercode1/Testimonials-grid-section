@@ -65,7 +65,6 @@ body {
     padding: 1.6rem;
     color: var(--white);
     box-shadow: 0 5px 5px rgb(0, 0, 0, 0.1);
-    text-align: justify;
 }
 
 .cards-all p:not(:last-child) {
@@ -141,6 +140,11 @@ body {
 
     body {
         width: clamp(1100px, 100%, 98rem);
+        background-color: var(--grey-100);
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     .element-container {
@@ -165,6 +169,10 @@ body {
         grid-row: 1;
     }
 
+    .card-daniel-clifford p:not(:last-child) {
+        padding-inline-start: 0.5rem;
+    }
+
     .card-daniel-clifford::before {
         position: absolute;
         content: url(./images/bg-pattern-quotation.svg);
@@ -185,6 +193,10 @@ body {
     .card-patrick-abrams {
         grid-column: 2 / span 2;
         grid-row: 2;
+    }
+
+    .card-patrick-abrams p:not(:last-child) {
+        padding-inline-start: 0.5rem;
     }
 
     .card-kira-whittle {
