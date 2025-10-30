@@ -39,7 +39,7 @@
 }
 
 body {
-    width: clamp(310px, 50% 48rem);
+    width: clamp(310px, 50%, 48rem);
     min-block-size: 100vh;
     background-color: var(--purple-50);
 }
@@ -142,8 +142,8 @@ body {
         width: clamp(1100px, 100%, 98rem);
         background-color: var(--grey-100);
         min-height: 100vh;
-        display: flex;
-        justify-content: center;
+        display: grid;
+        place-content: center;
         align-items: center;
     }
 
