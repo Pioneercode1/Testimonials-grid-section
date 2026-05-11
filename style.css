@@ -48,21 +48,19 @@ body {
 
 .element-container {
     width: clamp(290px, 50%, 26rem);
-    height: 60rem;
+    height: 2000px;
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: repeat(5, 1fr);
-    justify-content: center;
-    align-items: center;
-    gap: 24px;
-    padding-block: 2rem;
+    row-gap: 2rem;
+    padding-block: 4rem;
     padding-inline: 1rem;
     margin: 0 auto;
 }
 
 .cards-all {
     width: clamp(251px, 50%, 24rem);
-    height: auto;
+    height: fit-content;
     border-radius: 8px;
     padding: 1.6rem;
     color: var(--white);
